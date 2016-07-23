@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>li</title>
+    <script src="../../build/react.js"></script>
+    <script src="../../build/react-dom.js"></script>
+    <script src="../../build/browser.min.js"></script>
+</head>
+<body>
+<div id="example"></div>
+<script type="text/babel">
+
+    var arrayLi = [
+        <ol>webstorm</ol>,
+        <ol>sublime</ol>
+    ];
+    var ol = React.createClass({
+        render: <ol>132</ol>
+    })
+    ReactDOM.render(
+            <li key={arrayLi}>我是{arrayLi}</li>,
+            document.getElementById('example')
+    )
+</script>
+</body>
+</html>
