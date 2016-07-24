@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本框的编辑状态</title>
+    <script src="../../build/react.js"></script>
+    <script src="../../build/react-dom.js"></script>
+    <script src="../../build/browser.min.js"></script>
+</head>
+<body>
+<input   id="input1" disabled/>
+<input  id="input2"  />
+<div id="example">ad </div>
+<script type="text/babel">
+    var InputButton = React.createClass({
+        getInitialState: function () {
+            return {enable: true };
+        },
+        handleChange: function (event) {
+            this.setState({enable: !this.state.enable});
+        },
+        render: function () {
+            return (
+                    <div>
+                        <input id="ipt1"  disabled={this.state.enable} />
+                        <button  id="btnChange" onClick={this.handleChange}>改变编辑状态</button>
+
+                    </div>
+            );
+        }
+    });
+
+    ReactDOM.render(
+            <InputButton />,
+            document.getElementById('example')
+    );
+</script>
+</body>
+</html>
