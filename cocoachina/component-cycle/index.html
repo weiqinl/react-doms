@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件的生命周期</title>
+    <script src="../../build/react.js"></script>
+    <script src="../../build/react-dom.js"></script>
+    <script src="../../build/browser.min.js"></script>
+</head>
+<body>
+<div id = "example0" style="opacity: 0.11">Hello World!</div>
+<div id = "example4" style="opacity: 1.0">Hello World!</div>
+<div id = "example1" style="opacity: 0.3">Hello World!</div>
+<div id = "example3" style="opacity: 0.9">Hello World!</div>
+<div id = "example2" style="opacity: 0.5">Hello World!</div>
+<div id = "example">你好，生命周期~</div>
+<script type="text/babel">
+    var Cycle = React.createClass({
+        getInitialState: function () {
+            return {opacity: 0.1};
+        },
+        componentDidMount: function () {
+          var timer = setInterval(function ( ) {
+              var opacity = this.state.opacity;
+              opacity -= 0.05;
+              if (opacity < 0.1) {
+                  opacity = 1.0;
+              }
+              this.setState({opacity: opacity});
+          }.bind(this),100);
+        },
+        render: function () {
+            return (
+                    <div style={{opacity: this.state.opacity}}>组件的生命周期:你好，{this.props.name}</div>
+            );
+        }
+    });
+    ReactDOM.render(
+            <Cycle name="刘伟勤"/>,
+            document.getElementById('example')
+    );
+</script>
+</body>
+</html>
