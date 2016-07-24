@@ -15,11 +15,13 @@
         <ol>webstorm</ol>,
         <ol>sublime</ol>
     ];
-    var ol = React.createClass({
-        render: <ol>132</ol>
+    var Ol = React.createClass({
+        render: function () {
+            return  <ol>132{arrayLi}</ol>;
+        }
     })
     ReactDOM.render(
-            <li key={arrayLi}>我是{arrayLi}</li>,
+            <Ol></Ol>,
             document.getElementById('example')
     )
 </script>
