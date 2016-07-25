@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>组件的嵌套</title>
+    <script src="../../build/react.js"></script>
+    <script src="../../build/react-dom.js"></script>
+    <script src="../../build/browser.min.js"></script>
+</head>
+<body>
+<div id = "example"></div>
+<script type="text/babel">
+
+var Search = React.createClass({
+   render: function () {
+       return (
+               <div >
+                   {this.props.searchType}:<input type="text" />
+                   <button>Search</button>
+                   </div>
+       );
+   }
+});
+    var Page = React.createClass({
+       render: function () {
+           return (
+                   <div>
+                       <h1>Welcome!</h1>
+                       <Search searchType="Title" />
+                       <Search searchType="Content" />
+                       </div>
+           );
+       }
+    });
+ReactDOM.render(
+        <Page />,
+        document.getElementById('example')
+);
+</script>
+</body>
+</html>
