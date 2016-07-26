@@ -1,8 +1,11 @@
 /**
  * Created by ruiyou on 2016/7/26.
  */
+/*
+*   jsx语法
+* */
 
-var CommontBox = React.createClass({
+var CommentBox = React.createClass({
     render: function () {
         return (
             <div className="commentBox">
@@ -11,7 +14,6 @@ var CommontBox = React.createClass({
         );
     }
 });
-
 ReactDOM.render(
     <CommentBox />,
     document.getElementById('content')
