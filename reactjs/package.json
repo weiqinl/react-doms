@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/reactjs/react-tutorial.git"
+    "url": "https://github.com/weiqinl/react-doms/tree/master/reactjs"
   },
   "keywords": [
     "react",
@@ -26,9 +26,9 @@
   ],
   "author": "petehunt",
   "bugs": {
-    "url": "https://github.com/reactjs/react-tutorial/issues"
+    "url": "https://github.com/weiqinl/react-doms/issues"
   },
-  "homepage": "https://github.com/reactjs/react-tutorial",
+  "homepage": "https://github.com/weiqinl/react-doms/tree/master/reactjs",
   "engines" : {
     "node" : "0.12.x"
   }
