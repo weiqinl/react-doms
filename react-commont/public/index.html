@@ -31,12 +31,11 @@
     var CommentForm = React.createClass({
         render: function () {
             return (
-                    <div className="commentForm">
-                        <h2 className="commentAuthor">
-                            {this.props.author}
-                        </h2>
-
-                    </div>
+                    <form className="commentForm">
+                        <input type="text" placeholder="Your name"/>
+                        <input type="text" placeholder="Say something..."/>
+                        <input type="button" value="post" />
+                    </form>
             );
         }
     });
