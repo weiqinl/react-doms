@@ -36,6 +36,7 @@
             if (!text || !author ) {
                 return;
             }
+            this.props.onCommentSubmit({author: author, text: text}),
             this.refs.author.value = '';
             this.refs.text.value = '';
             return;
@@ -73,15 +74,26 @@
                 dataType: 'json',
                 cache: false,
                 success: function (data) {
-                    this.setState({data: data});
+                    this.setState( {data: data} );
                 }.bind(this),
                 error: function (xhr, status, err) {
                     console.error(this.props.url, status, err.toString());
                 }.bind(this)
             });
         },
-        handleCommentSubmit: function () {
-            //TODO: submit to the server and refresh the list
+        handleCommentSubmit: function (comment) {
+            $.ajax({
+                url: this.props.url,
+                dataType: 'json',
+                type: 'POST',
+                data: comment,
+                success: function (data) {
+                    this.setState({data: data});
+                }.bind(this),
+                error: function (xhr, status, err) {
+                    console.error(this.props.url, status, err.toString());
+                }.bind(this)
+            });
         },
         getInitialState: function () {
             return {data: []};
@@ -94,15 +106,14 @@
             return (
                     <div className="commentBox">
                         <h1>Comments</h1>
-                        <CommentList data={this.state.data} />
-                        <br/>
-                        <CommentForm onCommentSubmit={this.handleCommentSubmit} />
+                        <CommentList  data={this.state.data}/>
+                        <CommentForm onCommentSubmit ={this.handleCommentSubmit}/>
                     </div>
             );
         }
     });
     ReactDOM.render(
-            <CommentBox url = "../comments.json" pollInterval = {200000} />,
+            <CommentBox url = "../comments.json" pollInterval = {20000} />,
             document.getElementById('content')
     );
 </script>
