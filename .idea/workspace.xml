@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="389e02c0-e8ab-4bba-bc65-06f41c1c9c74" name="Default" comment="将reactjs文档中的案例添加">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react-commont/public/tutorial20.js" />
+    <list default="true" id="389e02c0-e8ab-4bba-bc65-06f41c1c9c74" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react-commont/public/index.html" afterPath="$PROJECT_DIR$/react-commont/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react-commont/public/scripts/tutorial18.js" afterPath="$PROJECT_DIR$/react-commont/public/scripts/tutorial18.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react-commont/public/tutorial20.js" afterPath="$PROJECT_DIR$/react-commont/public/tutorial20.js" />
     </list>
     <ignored path="react-doms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,21 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/react-commont/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="113" column="7" selection-start-line="113" selection-start-column="7" selection-end-line="113" selection-end-column="7" />
+            <state relative-caret-position="111">
+              <caret line="99" column="10" selection-start-line="99" selection-start-column="10" selection-end-line="99" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tutorial20.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tutorial20.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react-commont/public/tutorial20.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="40" column="59" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="59" />
+            <state relative-caret-position="100">
+              <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -258,7 +257,7 @@
       <workItem from="1469497201933" duration="16567000" />
       <workItem from="1469583638912" duration="549000" />
       <workItem from="1469589734780" duration="7289000" />
-      <workItem from="1469609871849" duration="6331000" />
+      <workItem from="1469609871849" duration="6481000" />
     </task>
     <task id="LOCAL-00001" summary="默认循环数组">
       <created>1469327443490</created>
@@ -316,11 +315,18 @@
       <option name="project" value="LOCAL" />
       <updated>1469625774975</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="新添加的评论出现在列表之前，必须等待请求完成，所以感觉很慢。我们可以提前添加这条评论到列表中，从而使应用感觉更快。">
+      <created>1469628873396</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1469628873396</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46159000" />
+    <option name="totallyTimeSpent" value="46309000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="394" y="41" width="909" height="766" extended-state="0" />
@@ -367,7 +373,8 @@
     <MESSAGE value="用回调函数作为属性（ props ）&#10;当用户提交评论的时候，我们需要刷新评论列表来加进这条新评论。在 CommentBox 中完成所有逻辑是合适的，因为 CommentBox 拥有代表评论列表的状态（ state ）。&#10;&#10;我们需要从子组件传数据到它的父组件。我们在父组件的 render 方法中这样做：传递一个新的回调函数（ handleCommentSubmit ）到子组件，绑定它到子组件的 onCommentSubmit 事件上。无论事件什么时候触发，回调函数都会被调用：" />
     <MESSAGE value="//当用户提交表单的时候，在 CommentForm 中调用这个回调函数：" />
     <MESSAGE value="回调函数，提交到服务器&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="回调函数，提交到服务器&#10;" />
+    <MESSAGE value="新添加的评论出现在列表之前，必须等待请求完成，所以感觉很慢。我们可以提前添加这条评论到列表中，从而使应用感觉更快。" />
+    <option name="LAST_COMMIT_MESSAGE" value="新添加的评论出现在列表之前，必须等待请求完成，所以感觉很慢。我们可以提前添加这条评论到列表中，从而使应用感觉更快。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -717,21 +724,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/react-commont/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="113" column="7" selection-start-line="113" selection-start-column="7" selection-end-line="113" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/react-commont/public/tutorial20.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="40" column="59" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="59" />
+        <state relative-caret-position="100">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-commont/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="99" column="10" selection-start-line="99" selection-start-column="10" selection-end-line="99" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
