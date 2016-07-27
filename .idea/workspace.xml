@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="389e02c0-e8ab-4bba-bc65-06f41c1c9c74" name="Default" comment="">
+    <list default="true" id="389e02c0-e8ab-4bba-bc65-06f41c1c9c74" name="Default" comment="新添加的评论出现在列表之前，必须等待请求完成，所以感觉很慢。我们可以提前添加这条评论到列表中，从而使应用感觉更快。">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react-commont/public/index.html" afterPath="$PROJECT_DIR$/react-commont/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react-commont/public/tutorial20.js" afterPath="$PROJECT_DIR$/react-commont/public/tutorial20.js" />
     </list>
     <ignored path="react-doms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,8 +29,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/react-commont/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="99" column="10" selection-start-line="99" selection-start-column="10" selection-end-line="99" selection-end-column="10" />
+            <state relative-caret-position="-14">
+              <caret line="85" column="36" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -40,7 +39,7 @@
       <file leaf-file-name="tutorial20.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react-commont/public/tutorial20.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
+            <state relative-caret-position="250">
               <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
@@ -98,8 +97,8 @@
         <option value="$PROJECT_DIR$/react-commont/public/scripts/tutorial17.js" />
         <option value="$PROJECT_DIR$/react-commont/public/scripts/tutorial19.js" />
         <option value="$PROJECT_DIR$/react-commont/public/scripts/tutorial18.js" />
-        <option value="$PROJECT_DIR$/react-commont/public/index.html" />
         <option value="$PROJECT_DIR$/react-commont/public/tutorial20.js" />
+        <option value="$PROJECT_DIR$/react-commont/public/index.html" />
       </list>
     </option>
   </component>
@@ -110,10 +109,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="394" />
-    <option name="y" value="41" />
-    <option name="width" value="909" />
-    <option name="height" value="766" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -257,7 +256,7 @@
       <workItem from="1469497201933" duration="16567000" />
       <workItem from="1469583638912" duration="549000" />
       <workItem from="1469589734780" duration="7289000" />
-      <workItem from="1469609871849" duration="6481000" />
+      <workItem from="1469609871849" duration="7758000" />
     </task>
     <task id="LOCAL-00001" summary="默认循环数组">
       <created>1469327443490</created>
@@ -322,14 +321,21 @@
       <option name="project" value="LOCAL" />
       <updated>1469628873396</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="新添加的评论出现在列表之前，必须等待请求完成，所以感觉很慢。我们可以提前添加这条评论到列表中，从而使应用感觉更快。">
+      <created>1469629006789</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1469629006789</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46309000" />
+    <option name="totallyTimeSpent" value="47586000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="394" y="41" width="909" height="766" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.409224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -726,7 +732,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/react-commont/public/tutorial20.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
+        <state relative-caret-position="250">
           <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
@@ -736,8 +742,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/react-commont/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="99" column="10" selection-start-line="99" selection-start-column="10" selection-end-line="99" selection-end-column="10" />
+        <state relative-caret-position="-14">
+          <caret line="85" column="36" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
           <folding />
         </state>
       </provider>
