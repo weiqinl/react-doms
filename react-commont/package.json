@@ -1,0 +1,27 @@
+{
+  "name": "react-commont",
+  "version": "0.0.1",
+  "description": "react comment nodejs server",
+  "main": "nodeserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node nodeserver.js"
+  },
+  "keywords": [
+    "react",
+    "node"
+  ],
+  "author": "liuweiqin",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.11.4",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "react": "^15.2.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weiqinl/react-doms/tree/master/react-commont"
+  }
+}
