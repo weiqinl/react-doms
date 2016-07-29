@@ -41,11 +41,11 @@ var CommentForm = React.createClass({
     },
     render: function () {
         return (
-            <div className="commentForm" onSubmit={this.handleSubmit} >
+            <form className="commentForm" onSubmit={this.handleSubmit} >
                 <input type="text" placeholder="Y" value={this.state.author} onChange={this.handleAuthorChange} />
                 <input type="text" placeholder="S"  value={this.state.text} onChange={this.handleTextChange} />
                 <input type="submit"        value="post" />
-            </div>
+            </form>
         );
     }
 });
@@ -84,6 +84,8 @@ var CommentBox = React.createClass({
         comment.id = Date.now();
         var newComments = comments.concat([comment]);
         this.setState({data: newComments});
+
+        console.log(this.props.url);
         $.ajax({
             url: this.props.url,
             dataType: 'json',
@@ -103,7 +105,7 @@ var CommentBox = React.createClass({
     },
     componentDidMount: function () {
         this.loadCommentsFromServer();
-        setInterval(this.loadCommentsFromServer, this.props.pollInterval);
+       // setInterval(this.loadCommentsFromServer, this.props.pollInterval);
     },
     render: function () {
         return (
