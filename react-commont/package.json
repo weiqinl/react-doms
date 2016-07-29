@@ -14,10 +14,8 @@
   "author": "liuweiqin",
   "license": "ISC",
   "dependencies": {
-    "babel-core": "^6.11.4",
     "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "react": "^15.2.1"
+    "express": "^4.14.0"
   },
   "devDependencies": {},
   "repository": {
